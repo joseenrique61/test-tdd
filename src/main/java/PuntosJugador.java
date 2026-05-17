@@ -23,4 +23,8 @@ public class PuntosJugador {
         
         return jugadores.get(jugador);
     }
+
+    public void resetearPuntos(String jugador){
+        jugadores.put(jugador, 0);
+    }
 }
