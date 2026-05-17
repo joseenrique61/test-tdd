@@ -18,4 +18,9 @@ public class PuntosJugador {
     public void restarPuntos(String jugador,int puntos){
         jugadores.put(jugador,jugadores.get(jugador)-puntos);
     }
+
+    public int obtenerPuntos(String jugador){
+        
+        return jugadores.get(jugador);
+    }
 }
