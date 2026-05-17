@@ -15,4 +15,12 @@ public class PuntosJugadorTest {
 
         assertTrue(puntosJugador.getJugadores().get("jugador1") == 20);
     }
+    @Test
+    public void testRestarPuntos(){
+        HashMap<String, Integer> jugadores = new HashMap<>();
+        jugadores.put("jugador1", 10);
+        PuntosJugador puntosJugador = new PuntosJugador(jugadores);
+        puntosJugador.restarPuntos("jugador1",4);
+        assertTrue(puntosJugador.getJugadores().get("jugador1")==6);
+    }
 }
